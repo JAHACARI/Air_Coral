@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AirCoral</title>
+<link rel="stylesheet" href="CSS/nav_bar.css">
+<link rel="stylesheet" href="CSS/nosotros.css">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+<h2 class="logo">
+✈️ AirCoral
+</h2>
+</div>
+
+<input class="search" type="text" placeholder="Buscar">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="destinos.html">Destinos</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="contactenos.html">Contactenos</a>
+</nav>
+
+<i class='bx bxs-user'></i>
+
+</header>
+
+<main class="main-content">
+    <section class="nosotros-section">
+        <h2>SOBRE NOSOTROS</h2>
+        
+        <div class="big-card">
+            
+            <div class="card-left">
+                <div class="image-container">
+                    <img src="'ruta/a/tu/imagen_playa.jpg'" alt="Playa paradisíaca con bota navideña">
+                </div>
+                <div class="details-container">
+                    <h3>DETALLES</h3>
+                    <p>Manejamos una amplia gama de servicios.</p>
+                    <p>Excelente calidad y atención personalizada.</p>
+                    <p>Conectamos personas y culturas a través de vuelos seguros y confortables. Nuestra prioridad es tu experiencia de viaje.</p>
+                </div>
+            </div>
+            
+            <div class="card-right" id="feedback-trigger">
+                <div class="mailbox-card">
+                    <img src="'ruta/a/tu/icono_buzon.png'" alt="Icono de buzón de sugerencias">
+                    <p>Tu opinión nos importa. Haz clic aquí para enviarnos tus sugerencias.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="feedback-section" id="feedback-panel">
+            <div class="feedback-card">
+                <div class="feedback-info">
+                    <img src="'ruta/a/tu/icono_buzon.png'" alt="Icono de buzón">
+                    <div class="text-group">
+                        <h4>¿Quieres conocer mejor el mundo?</h4>
+                        <p>Te ayudamos a conseguirlo.</p>
+                        <p class="sub-text">Tu opinión es crucial. Escribe lo que te gustaría que mejoremos para ofrecerte mayor comodidad en tus compras, nuevos servicios o destinos que te gustaría que ofreciéramos.</p>
+                    </div>
+                </div>
+                
+                <form class="feedback-form">
+                    <label for="comentario">Escribe</label>
+                    <textarea id="comentario" name="comentario" rows="4"></textarea>
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+    <script>
+        // Obtenemos los elementos por sus IDs
+        const trigger = document.getElementById('feedback-trigger');
+        const panel = document.getElementById('feedback-panel');
+
+        // Añadimos un escuchador de eventos de clic al trigger
+        trigger.addEventListener('click', () => {
+            // Alternamos la clase 'show' en el panel de feedback
+            panel.classList.toggle('show');
+        });
+    </script>
