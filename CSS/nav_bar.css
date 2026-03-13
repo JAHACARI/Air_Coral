@@ -5,55 +5,69 @@ box-sizing:border-box;
 font-family:Arial;
 }
 
-
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #ffffff;
+    line-height: 1.6;
+}
+    
 /* NAVBAR */
 
 .navbar{
-
 display:flex;
 align-items:center;
 justify-content:space-between;
 padding:15px 60px;
 background:#6da0df;
-
 }
 
 .logo{
-
 display:flex;
 align-items:center;
 gap:10px;
 font-size:20px;
 font-weight:bold;
-
 }
 
 .logo img{
-
 width:40px;
-
 }
 
 .search{
-
 padding:8px 15px;
 border-radius:13px;
 border:none;
 width:250px;
-
 }
 
 nav a{
-
 margin:0 15px;
 text-decoration:none;
-color:black;
+color:#000000;
 font-weight:bold;
-
 }
 
+/* Línea inferior elegante al hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000000;           /* azul del navbar */
+    transition: all 0.35s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 70%;
+    animation: activeLineGlow 0.5s ease-in-out;
+}
+
+
 .bxs-user{
-
-font-size:28px;
-
+font-size:50px;
 }

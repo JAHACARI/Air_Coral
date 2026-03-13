@@ -6,31 +6,94 @@
 
 <title>AirCoral</title>
 <link rel="stylesheet" href="CSS/nav_bar.css">
-<link rel="stylesheet" href="CSS/index.css">
-
+<link rel="stylesheet" href="CSS/contactenos.css">
+<script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-
 <!-- NAVBAR -->
 
 <header class="navbar">
-<h2 class="logo">
-<i class="fa-solid fa-plane"></i> AirCoral
-</h2>
-</div>
+    <div>
+        <h2 class="logo">
+            ✈️ AirCoral
+        </h2>
+    </div>
 
-<input class="search" type="text" placeholder="Buscar">
+    <input class="search" type="text" placeholder="Buscar">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="destinos.html">Destinos</a>
-<a href="nosotros.html">Nosotros</a>
-<a href="contactenos.html">Contactenos</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contactenos.html">Contactenos</a>
+    </nav>
 
-<i class='bx bxs-user'></i>
+    <i class='bx bxs-user'></i>
 
 </header>
+
+<section class="contact-section">
+  <div class="container">
+
+    <div class="info">
+      <h2>CONTACTOS</h2>
+
+      <div class="contact-item">
+        <a href=""><i class="fa-solid fa-location-dot"></i></a>
+        <span>123 camsite avenue, wildermess, CA 9874</span>
+      </div>
+
+      <div class="contact-item">
+        <a href=""><i class="fa-solid fa-message"></i></a>
+        <span>info@janier-hair-email.com</span>
+      </div>
+
+      <div class="contact-item">
+        <a href=""><i class="fa-solid fa-phone"></i></a>
+        <span>tel: 320 246 6566</span>
+      </div>
+
+      <div class="contact-item">
+        <a href=""><i class="fa-solid fa-calendar"></i></a>
+        <div>
+          <div>Lunes - Viernes: 9:00 AM - 5:00 PM</div>
+          <div>Sábado: 10:00 AM - 3:00 PM</div>
+          <div>Domingo: 9:00 AM - 5:00 PM</div>
+        </div>
+      </div>
+
+      <div class="contact-item" style="margin-top:2rem;">
+        <a href=""><i class="fa-solid fa-earth-americas"></i></a>
+        <span>www.codiweb.com</span>
+      </div>
+    </div>
+
+    <div class="form-side">
+      <form>
+        <div class="form-group">
+          <label for="name">Tu nombre</label>
+          <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Tu email</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tu mensaje</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">ENVIAR</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

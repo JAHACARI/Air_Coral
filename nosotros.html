@@ -6,31 +6,31 @@
 <title>AirCoral</title>
 <link rel="stylesheet" href="CSS/nav_bar.css">
 <link rel="stylesheet" href="CSS/nosotros.css">
-
+    <script src="https://kit.fontawesome.com/bdc4e23805.js" crossorigin="anonymous"></script>
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-
 <!-- NAVBAR -->
 
 <header class="navbar">
-<h2 class="logo">
-✈️ AirCoral
-</h2>
-</div>
+    <div>
+        <h2 class="logo">
+            ✈️ AirCoral
+        </h2>
+    </div>
 
-<input class="search" type="text" placeholder="Buscar">
+    <input class="search" type="text" placeholder="Buscar">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="destinos.html">Destinos</a>
-<a href="nosotros.html">Nosotros</a>
-<a href="contactenos.html">Contactenos</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contactenos.html">Contactenos</a>
+    </nav>
 
-<i class='bx bxs-user'></i>
+    <i class='bx bxs-user'></i>
 
 </header>
 
@@ -93,4 +93,13 @@
             // Alternamos la clase 'show' en el panel de feedback
             panel.classList.toggle('show');
         });
+
+        // Manejar el envío del formulario
+        const form = document.querySelector('.feedback-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevenir el envío por defecto
+            alert('Gracias por tu comentario. Lo revisaremos y tomaremos en cuenta para mejorar nuestros servicios.');
+        });
     </script>
+</body>
+</html>

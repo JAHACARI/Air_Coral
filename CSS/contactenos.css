@@ -1,0 +1,132 @@
+
+    .contact-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #5c5c5c 0%, #ffffff 100%);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      max-width: 1100px;
+      width: 100%;
+      background: rgba(209, 209, 209, 0.897);
+      border-radius: 16px;
+      padding: 50px 40px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+      backdrop-filter: blur(6px);
+    }
+
+    .info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .info h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+      color: #000000;
+      letter-spacing: 1px;
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+    .info h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80px;
+      height: 4px;
+      background: #127bc1; /* rojo vino / marrón oscuro - cámbialo si quieres */
+      border-radius: 2px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.8rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-item a {
+      width: 35px;
+      height: 35px;
+      margin-right: 16px;
+      color: #000000;
+      flex-shrink: 0;
+    }
+
+    .form-side {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    .form-group {
+      margin-bottom: 1.6rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: #127bc1;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.616);
+      color: rgb(0, 0, 0);
+      font-size: 1rem;
+      transition: all 0.25s ease;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: rgba(255, 255, 255, 0.829);
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.658);
+      box-shadow: 0 0 0 2px #127bc1;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      background: #127bc1;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    .btn-submit:hover {
+      background: #2679a0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(29, 62, 122, 0.644);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 40px 25px;
+      }
+    }
