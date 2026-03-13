@@ -163,3 +163,70 @@ border-radius:10px;
 margin:10px 0;
 
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 35px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-img img {
+        width: 250px;
+    }
+
+    .ofertas {
+        padding: 40px 20px;
+    }
+
+    .ofertas h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .exclusive {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .exclusive-text h2 {
+        font-size: 35px;
+    }
+
+    .exclusive-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card2 {
+        width: 200px;
+    }
+}

@@ -39,3 +39,19 @@ padding:10px 15px;
 border-radius:8px;
 cursor:pointer;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ofertas, .paquetes, .mas-destinos {
+        padding: 30px 20px;
+    }
+
+    .contenedor-destinos {
+        gap: 15px;
+    }
+
+    .destino {
+        width: 180px;
+        padding: 15px;
+    }
+}

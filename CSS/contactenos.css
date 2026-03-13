@@ -127,6 +127,24 @@
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
-        padding: 40px 25px;
+        padding: 30px 20px;
+        gap: 30px;
+      }
+
+      .info h2 {
+        font-size: 2rem;
+      }
+
+      .contact-item {
+        font-size: 1rem;
+      }
+
+      .form-side {
+        min-width: 280px;
+      }
+
+      .btn-submit {
+        padding: 14px 28px;
+        font-size: 1rem;
       }
     }

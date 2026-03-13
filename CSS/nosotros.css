@@ -213,3 +213,44 @@ body {
     background-color: #bcdac9; /* Color un poco más oscuro al hover */
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px 10px;
+    }
+
+    .nosotros-section {
+        max-width: 100%;
+    }
+
+    .big-card {
+        flex-direction: column;
+    }
+
+    .card-left {
+        padding: 15px;
+    }
+
+    .card-right {
+        padding: 15px;
+    }
+
+    .mailbox-card {
+        max-width: 100%;
+    }
+
+    .feedback-card {
+        padding: 20px;
+    }
+
+    .feedback-info {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .feedback-info img {
+        width: 80px;
+    }
+}
