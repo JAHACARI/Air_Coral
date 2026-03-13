@@ -1,4 +1,3 @@
-/* --- ESTILOS GENERALES Y RESETEO --- */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +6,13 @@
 }
 
 body {
-    background-color: #f0f0f0; /* Fondo gris muy claro para el sitio */
+    background-color: #f0f0f0;
     color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* --- ESTILOS DEL CONTENIDO PRINCIPAL --- */
 .main-content {
     flex-grow: 1;
     display: flex;
@@ -34,18 +32,17 @@ body {
     color: #1a1a1a;
 }
 
-/* --- ESTILOS DE LA TARJETA GRANDE --- */
 .big-card {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
-    display: flex; /* Disposición en fila */
-    overflow: hidden; /* Corta lo que sobresalga de los bordes redondeados */
-    margin-bottom: 40px; /* Espacio para la sección de feedback */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex; 
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .card-left {
-    flex: 2; /* Ocupa 2/3 del espacio */
+    flex: 2; 
     padding: 20px;
 }
 
@@ -54,13 +51,13 @@ body {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
-    aspect-ratio: 16 / 9; /* Mantiene la proporción de la imagen */
+    aspect-ratio: 16 / 9;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    object-fit: cover;
     display: block;
     border: 1.5px solid #1a1a1a;
 }
@@ -79,19 +76,19 @@ body {
 }
 
 .card-right {
-    flex: 1; /* Ocupa 1/3 del espacio */
+    flex: 1;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; /* Indica que es clickable */
+    cursor: pointer;
 }
 
 .mailbox-card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08); /* Sombra más suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
     border: 1px solid #e0e0e0;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -101,7 +98,7 @@ body {
 }
 
 .mailbox-card:hover {
-    transform: translateY(-5px); /* Efecto al hover */
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
 
@@ -117,14 +114,12 @@ body {
     line-height: 1.4;
 }
 
-/* --- ESTILOS DE LA SECCIÓN DE FEEDBACK --- */
 .feedback-section {
-    display: none; /* OCULTA POR DEFECTO */
+    display: none;
     opacity: 0;
-    transition: opacity 0.4s ease; /* Efecto de desvanecimiento */
+    transition: opacity 0.4s ease; 
 }
 
-/* Clase que el script añade/quita para mostrar/ocultar */
 .feedback-section.show {
     display: block;
     opacity: 1;
@@ -186,18 +181,18 @@ body {
 
 .feedback-form textarea {
     width: 100%;
-    background-color: #e0e0e0; /* Color gris de tu input */
+    background-color: #e0e0e0;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     font-size: 13px;
     margin-bottom: 20px;
     outline: none;
-    resize: vertical; /* Permite cambiar el tamaño solo verticalmente */
+    resize: vertical;
 }
 
 .btn-enviar {
-    background-color: #cfe6d8; /* Color verde claro de tu botón */
+    background-color: #cfe6d8;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -210,7 +205,7 @@ body {
 }
 
 .btn-enviar:hover {
-    background-color: #bcdac9; /* Color un poco más oscuro al hover */
+    background-color: #bcdac9;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
 }
 
