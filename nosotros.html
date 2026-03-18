@@ -84,20 +84,17 @@
 </main>
 
     <script>
-        // Obtenemos los elementos por sus IDs
+
         const trigger = document.getElementById('feedback-trigger');
         const panel = document.getElementById('feedback-panel');
 
-        // Añadimos un escuchador de eventos de clic al trigger
         trigger.addEventListener('click', () => {
-            // Alternamos la clase 'show' en el panel de feedback
             panel.classList.toggle('show');
         });
 
-        // Manejar el envío del formulario
         const form = document.querySelector('.feedback-form');
         form.addEventListener('submit', (e) => {
-            e.preventDefault(); // Prevenir el envío por defecto
+            e.preventDefault();
             alert('Gracias por tu comentario. Lo revisaremos y tomaremos en cuenta para mejorar nuestros servicios.');
         });
     </script>

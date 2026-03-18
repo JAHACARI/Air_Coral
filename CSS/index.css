@@ -43,7 +43,7 @@ gap:20px;
 
 }
 
-button{
+.btn1, .btn2 {
 
 padding:12px 25px;
 border:none;
@@ -52,6 +52,8 @@ background:#2f55d4;
 color:white;
 font-weight:bold;
 cursor:pointer;
+text-decoration: none;
+display: inline-block;
 
 }
 
